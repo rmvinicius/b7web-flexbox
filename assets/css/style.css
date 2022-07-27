@@ -1,0 +1,497 @@
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script&family=PT+Sans:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'PT Sans', sans-serif;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    height: 120px;
+}
+
+/* MENU */
+
+.menuMobile {
+    display: none;
+    height: 60px;
+    width: 60px;
+    margin: 30px 20px 30px 0px;
+}
+
+.mm_line {
+    height: 6px;
+    background-color: #266D82;
+    border-radius: 10px;
+}
+
+.container {
+    width: 990px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    align-items:center;
+}
+
+.logo img {
+    max-width: 120px;
+    width: 100%;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+}
+
+li a {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color:#266D82;
+}
+
+nav .active a, nav a:hover {
+    background-color: #266D82;
+    color: white;
+}
+
+/* BANNER E INICIO DA PÁGINA */
+
+#banner {
+    position: relative;
+    background-color: #266d8288;
+    display: flex;
+    justify-content: center;
+}
+
+#banner::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/background.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.banner_headline {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    min-height: 250px;
+}
+
+.banner_headline1 h1 {
+    color: #FFB30F;
+    font-size: 100px;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Oleo Script', cursive, sans-serif;
+}
+
+.banner_headline1 h2 {
+    color: #FFB30F;
+    font-size: 40px;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Oleo Script', cursive, sans-serif;
+    text-align: right;
+}
+
+.banner_headline2 img {
+    width: 100%;
+    max-width: 400px;
+    height: 100%;
+}
+
+.banner_options {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.banner1,.banner2,.banner3 {
+    flex: 1;
+    color: white;
+    padding: 20px;
+}
+
+.banner1 {
+    background-color: #649fb1;
+}
+
+.banner2 {
+    background-color: #266D82;
+}
+
+.banner3 {
+    background-color: #0e4657;
+}
+
+.banner_title {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 24px;
+}
+
+.banner_desc {
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.banner_options a {
+    display: inline-block;
+    border: 1px solid white;
+    padding: 5px;
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.banner_saibamais  {
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* SESSAO PRINCIPAL */
+
+#geral {
+    display: flex;
+    justify-content: center;
+}
+
+#geral section {
+    margin-top: 30px;
+    flex: 2;
+}
+
+#geral aside {
+    flex: 1;
+    margin-top: 30px;
+}
+
+.widget_title {
+    color: black;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.widget_bar {
+    width: 50px;
+    height: 2px;
+    background-color: #266D82;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.department {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.department .row {
+    display: flex;
+    height: 150px;
+    width: 150px;
+    background-color: #266D82;
+    margin-bottom: 30px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.row a {
+    text-decoration: none;
+    color: white;
+    font-size: 22px;
+}
+
+.widget_body .contact {
+    display: flex;
+    flex-direction: row;
+    border-top: 1px solid #e9e9e9;
+    align-items: center;
+}
+
+.contact p {
+    margin-left: 10px;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+article {
+    flex: 1;
+    min-width: 250px;
+    margin-right: 20px;
+}
+
+article a {
+    text-decoration: none;
+}
+
+article .news_data {
+    display: flex;
+}
+
+article .news_posted {
+    background-color: #266D82;
+    font-size: 14px;
+    padding: 10px;
+    margin-right: 2px;
+    color: white;
+    font-weight: bold;
+}
+
+article .news_comments {
+    background-color:#649fb1;
+    font-size: 14px;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+}
+
+article .news_thumbnail {
+    margin-top: 30px;
+}
+
+article .news_thumbnail img {
+    width: 100%;
+    height: auto;
+}
+
+article .news_title {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    color: black;
+    font-size: 24px;
+}
+
+article .news_resume {
+    font-size: 16px;
+    color: rgb(82, 82, 82);
+    line-height: 20px;
+    margin-bottom: 20px;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+footer .footer_menu {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+}
+
+.footer_menu a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+}
+
+.footer_menu h2 {
+    text-align: center;
+}
+
+.fm_1, .fm_2, .fm_3 {
+    flex: 1;
+}
+
+.fm_1 {
+    background-color: #649fb1;
+}
+
+.fm_2 {
+    background-color: #266D82;
+}
+
+.fm_3 {
+    background-color: #0e4657;
+}
+
+.footer_area {
+    display: flex;
+    margin-top: 30px;
+}
+
+.footer_areaitem {
+    flex: 1;
+}
+
+.flexColumn {
+    flex-direction: column;
+}
+
+footer .widget_title {
+    color: white;
+}
+
+.footer_copy {
+    border-top: 1px solid #2c2c2c;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    font-size: 14px;
+    margin-top: 30px;
+}
+
+footer .widget_body {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    margin-right: 20px;
+}
+
+.widget_location {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.widget_contact {
+    margin: 20px 0px;
+    flex: 1;
+}
+
+.widget_address {
+    margin-right: 20px;
+    flex: 2;
+}
+
+.widget_contact_list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.widget_contact_list p {
+    margin: 0px;
+    padding: 10px;
+}
+
+.widget_icons a {
+    padding: 10px;
+    background-color: grey;
+    text-decoration: none;
+    color: white;
+}
+
+.widget_latest_news ul li {
+    padding: 0px;
+    margin: 0px;
+}
+.widget_latest_news p {
+    padding: 0px;
+    margin: 5px 0px 0px;
+    color: #266D82;
+}
+
+/* RESPONSIVO */
+
+@media (max-width: 990px) {
+    .section, .footer-responsive {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+}
+@media (min-width: 761px) and (max-width: 960px) {
+    .widget_location {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+    .department {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 760px) {
+    .menuMobile {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    header  {
+        height: auto;
+    }
+    .banner_headline1 {
+        padding: 20px;
+    }
+    .banner_headline1 h1 {
+        font-size: 13vw;
+    }
+    .banner_headline1 h2 {
+        font-size: 6vw;
+    }
+    .banner_options {
+        flex-direction: column;
+        height: auto;
+    }
+    #geral .container {
+        flex-direction: column;
+    }
+    .department {
+        flex-wrap: none;
+        justify-content: space-around;
+    }
+    .footer_menu {
+        flex-direction: column;
+        text-align: center;
+    }
+    .footer_area {
+        flex-direction: column;
+    }
+    .footer_area .footer_areaitem {
+        margin-bottom: 20px;
+    }
+    nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        background-color: white;
+        z-index: 1;
+    }
+}
