@@ -1,3 +1,3 @@
 # Flexbox e responsividade
 
-Criado um template de um site e adaptado com informações da empresa seuluiz, criando um site resposivo com flexbox.
+Adaptado um template com informações da empresa seuluiz, criando um site responsivo com flexbox.
